@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">INFO6134_Group7</string>
+    <string name="doggo">Doggo</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log in ></string>
+    <string name="signup">Sign up ></string>
+    <string name="newpost">New Post</string>
+    <string name="updatepost">Update Post</string>
+    <string name="addpost">Add</string>
+    <string name="editpost">Edit</string>
+    <string name="removepost">Delete</string>
+    <string name="signout">Sign out</string>
+    <string name="List">Dog List</string>
+    <string name="dogname">Name</string>
+    <string name="doggender">Gender</string>
+    <string name="addLocation">Add location</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="dogage">Age</string>
+    <string name="dogbreed">Breed</string>
+    <string name="dogheight">Height</string>
+    <string name="doglength">Length</string>
+    <string name="dogweight">Weight</string>
+    <string name="dogdimensions">Dimensions</string>
+    <string name="address">Address</string>
+    <string name="zip">Zip Code</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="street">Street</string>
+    <string name="back">Back</string>
+    <string name="service">Location Services not working</string>
+    <string name="invalid_lat_long">Invalid Latitude and Longitude</string>
+    <string name="no_address_found">No address found from that Lat/Lng</string>
+    <string name="per_grant">per_grant</string>
+    <string name="per_not_grant">per_not_grant</string>
+    <string name="per_not_ask">per_not_ask</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="ageArray">
+        <item>Age</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="breedArray">
+        <item>Breed</item>
+        <item>Australian Shepard</item>
+        <item>Beagle</item>
+        <item>Corgi</item>
+        <item>French Bulldog</item>
+        <item>Golden Retriever</item>
+        <item>Pomerian</item>
+        <item>Shiba Inu</item>
+    </string-array>
+    <string-array name="heightArray">
+        <item>Height </item>
+        <item>1 cm</item>
+        <item>2 cm</item>
+        <item>3 cm</item>
+        <item>4 cm</item>
+        <item>5 cm</item>
+        <item>6 cm</item>
+        <item>7 cm</item>
+        <item>8 cm</item>
+        <item>9 cm</item>
+        <item>10 cm</item>
+    </string-array>
+    <string-array name="lengthArray">
+        <item>Length</item>
+        <item>1 cm</item>
+        <item>2 cm</item>
+        <item>3 cm</item>
+        <item>4 cm</item>
+        <item>5 cm</item>
+        <item>6 cm</item>
+        <item>7 cm</item>
+        <item>8 cm</item>
+        <item>9 cm</item>
+        <item>10 cm</item>
+    </string-array>
+    <string-array name="weightArray">
+        <item>Weight</item>
+        <item>1 kg</item>
+        <item>2 kg</item>
+        <item>3 kg</item>
+        <item>4 kg</item>
+        <item>5 kg</item>
+        <item>6 kg</item>
+        <item>7 kg</item>
+        <item>8 kg</item>
+        <item>9 kg</item>
+        <item>10 kg</item>
+    </string-array>
+</resources>

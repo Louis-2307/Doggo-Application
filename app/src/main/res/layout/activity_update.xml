@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateActivity">
+
+    <TextView
+        android:id="@+id/textViewTitleUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/updatepost"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/editTextNameUpdate"
+        android:layout_width="325dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="@string/dogname"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textSize="27sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitleUpdate" />
+
+    <TextView
+        android:id="@+id/textViewGenderUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/doggender"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroupGenderUpdate"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNameUpdate" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupGenderUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewGenderUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNameUpdate">
+
+        <RadioButton
+            android:id="@+id/radioButtonMaleUpdate"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:onClick="onRadioClicked"
+            android:text="@string/male"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFemaleUpdate"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:onClick="onRadioClicked"
+            android:text="@string/female"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spinnerBreedUpdate"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/dogbreed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupGenderUpdate" />
+
+    <Spinner
+        android:id="@+id/spinnerAgeUpdate"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:autofillHints="@string/dogage"
+        android:contentDescription="@string/dogage"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerWeightUpdate"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerBreedUpdate" />
+
+    <Spinner
+        android:id="@+id/spinnerWeightUpdate"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/dogweight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/spinnerAgeUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerBreedUpdate" />
+
+    <Spinner
+        android:id="@+id/spinnerHeightUpdate"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/dogheight"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerLengthUpdate"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerAgeUpdate" />
+
+    <Spinner
+        android:id="@+id/spinnerLengthUpdate"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/doglength"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/spinnerHeightUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerWeightUpdate" />
+
+    <EditText
+        android:id="@+id/editTextStreetUpdate"
+        android:layout_width="229dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/street"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/editTextZipUpdate"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerHeightUpdate" />
+
+    <EditText
+        android:id="@+id/editTextZipUpdate"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/zip"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextStreetUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerLengthUpdate" />
+
+    <EditText
+        android:id="@+id/editTextCityUpdate"
+        android:layout_width="157dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/city"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/editTextStateUpdate"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextStreetUpdate" />
+
+    <EditText
+        android:id="@+id/editTextStateUpdate"
+        android:layout_width="166dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/state"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextCityUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/editTextZipUpdate" />
+
+    <Button
+        android:id="@+id/buttonPostUpdate"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:onClick="btnSave"
+        android:text="@string/updatepost"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
